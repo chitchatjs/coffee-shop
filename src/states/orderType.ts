@@ -1,8 +1,8 @@
 import { alexa as ax } from "@chitchatjs/alexa";
 import builtins from "../builtins";
 
-const orderDrinkUtterances = ["i want to order drink", "drink please", "i want drink"];
-const orderSnacksUtterances = ["snacks please", "i want to order snacks", "i want snacks"];
+export const orderDrinkUtterances = ["i want to order drink", "drink please", "i want drink"];
+export const orderSnacksUtterances = ["snacks please", "i want to order snacks", "i want snacks"];
 
 // asks user if s/he wants a drink or snacks
 export default ax

@@ -1,15 +1,15 @@
 import { alexa as ax } from "@chitchatjs/alexa";
-import Init from "./states/init";
-import OrderCoffee from "./states/orderCoffee";
-import OrderSnacks from "./states/orderSnacks";
-import OrderType from "./states/orderType";
+import init from "./states/init";
+import orderDrink from "./states/orderDrink";
+import orderSnacks from "./states/orderSnacks";
+import orderType from "./states/orderType";
 
 let skill = ax
   .skill()
-  .addState(Init)
-  .addState(OrderType)
-  .addState(OrderCoffee)
-  .addState(OrderSnacks)
+  .addState(init)
+  .addState(orderType)
+  .addState(orderDrink)
+  .addState(orderSnacks)
   .build();
 
 export = ax.dialogManager(skill).exports();

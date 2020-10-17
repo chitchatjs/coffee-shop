@@ -1,4 +1,5 @@
 import { alexa as ax } from "@chitchatjs/alexa";
+import { orderDrinkUtterances } from "./orderType";
 
 export default ax
   .state("OrderSnacks")
@@ -8,14 +9,12 @@ export default ax
       .add(
         ax
           .whenUserSays(["chips please", "i want a sandwich"])
-          .then(ax.ask("ok ordered your snack. Anything else?").build())
+          .then(ax.ask("ok added snacks as well. Anything else?").build())
           .build()
       )
       .add(
-        // TODO we can't use the same link in the whenUserSays(..) because it duplicates the generated intent
-        // https://github.com/chitchatjs/chitchatjs/issues/41
         ax
-          .whenUserSays(["can i order drink also", "drink also please"])
+          .whenUserSays(orderDrinkUtterances)
           .then(
             ax
               .compound()

@@ -1,7 +1,7 @@
 {
-  "name": "hello-bot",
+  "name": "coffee-shop",
   "version": "1.0.0",
-  "description": "A sample hello bot Alexa Skill using Chitchat JS.",
+  "description": "A sample coffee shop Alexa Skill using Chitchat JS.",
   "main": "dist/index.js",
   "scripts": {
     "build": "npm run clean && tsc",
@@ -18,7 +18,7 @@
   "author": "Kevindra Singh (kevindra.singh@gmail.com)",
   "license": "ISC",
   "dependencies": {
-    "@chitchatjs/alexa": "^0.2.3"
+    "@chitchatjs/alexa": "^0.2.5"
   },
   "devDependencies": {
     "@types/chai": "^4.2.13",

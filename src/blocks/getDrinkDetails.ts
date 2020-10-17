@@ -43,7 +43,9 @@ export default ax
                   .then(ax.ask("delivery or pickup?").build())
                   .otherwise(
                     ax
-                      .ask("okay, that was {qty} {size} {drink} for {deliveryPickup}, right?")
+                      .ask(
+                        "okay, that was {qty} {size} {drink} for {deliveryPickup}. Anything else?"
+                      )
                       .build()
                   )
                   .build()
